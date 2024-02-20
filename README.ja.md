@@ -9,7 +9,9 @@ CustomizableListDateFormat - Movable Type プラグイン
 
 ## 動作環境
 
-* Movable Type 6 以上
+* Movable Type 6
+* Movable Type 7
+* Movable Type 8
 
 ## インストール
 

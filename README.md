@@ -9,7 +9,9 @@ You can change date format in Listing. Customizable date are Published Date, Unp
 
 ## Requirements
 
-* Movable Type 6 or later
+* Movable Type 6
+* Movable Type 7
+* Movable Type 8
 
 ## Installation
 

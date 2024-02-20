@@ -1,6 +1,6 @@
 id: CustomizableListDateFormat
 name: CustomizableListDateFormat
-version: 1.0.0
+version: 2.0.0
 description: <__trans phrase='You can change date format in Listing. Customizable date are Published Date, Unpublish Date and Date Modified.'>
 plugin_link: https://github.com/bit-part/mt-plugin-CustomizableListDateFormat/
 author_name: <__trans phrase='bit part LLC'>
@@ -8,17 +8,26 @@ author_link: http://bit-part.net/
 l10n_class: CustomizableListDateFormat::L10N
 system_config_template: config_template.tmpl
 settings:
+    setting_content_data_authored_on:
+    setting_content_data_created_on:
+    setting_content_data_modified_on:
+    setting_content_data_unpublished_on:
     setting_entry_authored_on:
+    setting_entry_created_on:
     setting_entry_modified_on:
     setting_entry_unpublished_on:
     setting_page_authored_on:
+    setting_page_created_on:
     setting_page_modified_on:
     setting_page_unpublished_on:
     setting_asset_created_on:
     setting_log_created_on:
 list_properties:
+    content_data: $CustomizableListDateFormat::CustomizableListDateFormat::Plugin::hdlr_content_data_list_properties
     entry:
         authored_on:
+            html: $CustomizableListDateFormat::CustomizableListDateFormat::Plugin::hdlr_date_format
+        created_on:
             html: $CustomizableListDateFormat::CustomizableListDateFormat::Plugin::hdlr_date_format
         modified_on:
             html: $CustomizableListDateFormat::CustomizableListDateFormat::Plugin::hdlr_date_format
@@ -26,6 +35,8 @@ list_properties:
             html: $CustomizableListDateFormat::CustomizableListDateFormat::Plugin::hdlr_date_format
     page:
         authored_on:
+            html: $CustomizableListDateFormat::CustomizableListDateFormat::Plugin::hdlr_date_format
+        created_on:
             html: $CustomizableListDateFormat::CustomizableListDateFormat::Plugin::hdlr_date_format
         modified_on:
             html: $CustomizableListDateFormat::CustomizableListDateFormat::Plugin::hdlr_date_format
